@@ -1,8 +1,6 @@
 package ScreenShot_Demo;
 
 import java.io.File;
-import java.io.IOException;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +21,6 @@ public static void main(String[] args) throws Throwable {
 	File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	File dest = new File("src/main/resources/Screenshots"+RS+".jpg");
 	
-	FileHandler.copy(src, dest);
+	FileHandler.copy(src, dest); 
 }
 }
